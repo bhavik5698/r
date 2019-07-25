@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".signup"
+    tools:showIn="@layout/activity_signup">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@color/design_default_color_primary"
+        ></RelativeLayout>
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:src="@drawable/icon_person"
+       android:padding="10dp"
+       android:layout_marginTop="30dp"
+       android:id="@+id/img1"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/back"
+        android:layout_below="@+id/img1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/line0"
+            android:background="@drawable/back1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:weightSum="5">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:hint="Enter Name"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/back2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line0"
+            android:weightSum="5">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:inputType="textEmailAddress"
+                android:hint="Enter E-mail"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/back2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line1"
+            android:weightSum="5">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:inputType="number"
+                android:hint="Phone number"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/back2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line2"
+            android:weightSum="5">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:inputType="textPassword"
+                android:hint="Enter Password"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/back2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line3"
+            android:weightSum="5">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:inputType="textPassword"
+                android:hint="Re-Enter Password"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_back1"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</RelativeLayout>
